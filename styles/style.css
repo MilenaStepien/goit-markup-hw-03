@@ -1,0 +1,219 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --main-color: #2196f3;
+  --main-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --nd-color: #757575;
+  --rd-color: #ffffff;
+  --fth-color: #212121;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* ====== HEADER ====== */
+.navigation-logo {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.logo-first-part {
+  color: var(--main-color);
+}
+.logo-second-part {
+  color: var(--fth-color);
+}
+
+.logo-second-part-two {
+  color: var(--rd-color);
+}
+
+.navigation-list-link,
+.address-mail,
+.address-phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--fth-color);
+}
+
+.address-mail,
+.address-phone-number {
+  color: var(--nd-color);
+}
+
+.navigation-logo:hover,
+.navigation-logo:focus,
+.navigation-logo:active,
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.navigation-list-link:active,
+.address-map:hover,
+.address-map:focus,
+.address-map:active,
+.address-mail:hover,
+.address-mail:focus,
+.address-mail:active,
+.address-phone-number:hover,
+.address-phone-number:focus,
+.address-phone-number:active,
+.list-menu:hover,
+.list-menu:focus,
+.list-menu:active {
+  color: var(--main-color);
+}
+
+.modal-button:focus,
+.modal-button:hover,
+.modal-button:active {
+  color: var(--fth-color);
+  cursor: pointer;
+}
+/* ====== END HEADER ====== */
+
+/* ====== MAIN ====== */
+
+.section {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
+
+.modal-button {
+width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--rd-color);
+background-color: var(--main-color);
+}
+
+.title-h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rd-color);
+}
+
+.title-h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fth-color);
+}
+
+.text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--nd-color);
+}
+
+.title-h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--fth-color);
+}
+
+.profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: var(--nd-color);
+}
+/* ====== END MAIN ====== */
+
+/* ====== FOOTER ====== */
+
+.address-map,
+.address-mail,
+.address-phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.address {
+  font-style: normal;
+}
+
+.address-map {
+  color: var(--rd-color);
+}
+.hero,
+.footer {
+  background-color: var(--main-background-color);
+}
+
+/* ====== END FOOTER ====== */
+
+/* ====== PORTFOLIO ====== */
+
+.button-filtr {
+width: 101.14px;
+height: 26px;
+left: 459.93px;
+top: 180px;
+font-family: var(--main-font)
+font-weight: 500;
+font-size: 16px;
+line-height: 1.625;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--fth-color)
+background-color: var(--second-background-color);
+border-radius: 4px;
+}
+
+.button-filtr:focus,
+.button-filtr:hover,
+.button-filtr:active {
+  background-color: var(--main-color);
+  color: var(--rd-color);
+  cursor: pointer;
+}
+
+.list-menu {
+width: 322px;
+height: 36px;
+left: 239px;
+top: 576px;
+font-family: var(--main-font)
+font-weight: bold;
+font-size: 18px;
+line-height: 0.200;
+letter-spacing: 0.06em;
+color: var(--fth-color);
+text-decoration: none;
+}
