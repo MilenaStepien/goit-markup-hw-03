@@ -13,6 +13,35 @@ body {
   font-family: var(--main-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1600px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
+}
+
 /* ====== HEADER ====== */
 .navigation-logo {
   font-family: var(--secondary-font);
@@ -32,6 +61,14 @@ body {
 
 .logo-second-part-two {
   color: var(--rd-color);
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.address {
+  list-style: none;;
 }
 
 .navigation-list-link,
