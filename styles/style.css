@@ -19,22 +19,22 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    padding: 0;
-    }
+  padding: 0;
+}
 
 ul,
 ol,
 li {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 .link {
@@ -46,13 +46,17 @@ img {
 }
 
 .container {
-    width: 1600px;
-    padding: 0 215px;
-    align-items: center;
-    margin: 0 auto;
+  width: 1600px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /* ====== HEADER ====== */
+
+.header {
+  width: 1600px;
+}
 
 .header .container {
   display: flex;
@@ -75,6 +79,10 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  margin-left: 215px;
+}
+
+.navigation-logo-header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -84,7 +92,7 @@ img {
   padding-bottom: 32px;
 }
 
-.address {
+.header .address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -158,35 +166,37 @@ img {
 
 .hero .container {
   height: 600px;
+}
+
+.hero {
+  width: 1600px;
   background-color: var(--main-background-color);
 }
 
 .section {
-  position: absolute;
   width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  padding-top: 94px;
 }
 
 .modal-button {
-width: 200px;
-height: 50px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-font-family: var(--main-font);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.875;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--rd-color);
-background-color: var(--main-color);
-margin-left: 485px;
-margin-top: 30px;
-padding-left: 42px;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--rd-color);
+  background-color: var(--main-color);
+  margin-left: 700px;
+  margin-top: 30px;
+  padding-left: 42px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .title-h1 {
@@ -202,7 +212,6 @@ padding-left: 42px;
 
 .post-list {
   display: flex;
-  margin-top: 94px;
 }
 
 .title-h3 {
@@ -214,16 +223,35 @@ padding-left: 42px;
   color: var(--fth-color);
 }
 
+.post-list {
+  margin-left: 215px;
+}
+
 .text {
+  display: flex;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--nd-color);
+  width: 270px;
 }
 
 .img {
   display: flex;
+  margin-left: 215px;
+}
+
+img:not(:last-child) {
+  margin-right: 30px;
+}
+
+.czym-sie-zajmujemy {
+  padding-bottom: 94px;
+}
+
+.nasz-zespol {
+  background-color: var(--second-background-color);
 }
 
 .title-h2 {
@@ -233,6 +261,12 @@ padding-left: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--fth-color);
+  padding-bottom: 50px;
+}
+
+.name {
+  padding-top: 30px;
+  text-align: center;
 }
 
 .profession {
@@ -241,18 +275,34 @@ padding-left: 42px;
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--nd-color);
+  text-align: center;
+  margin-top: 10px;
 }
 /* ====== END MAIN ====== */
 
 /* ====== FOOTER ====== */
 
+.navigation-logo-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
 .address-map,
-.address-mail,
-.address-phone-number {
+.address-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  margin-left: 215px;
+  padding-bottom: 9px;
+}
+
+.footer .address-phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  margin-left: 215px;
 }
 
 .address {
@@ -263,7 +313,12 @@ padding-left: 42px;
   color: var(--rd-color);
 }
 
+.footer .address-phone-number {
+  padding-bottom: 60px;
+}
+
 .footer {
+  width: 1600px;
   background-color: var(--main-background-color);
 }
 
@@ -272,7 +327,7 @@ padding-left: 42px;
 /* ====== PORTFOLIO ====== */
 
 .button-filtr {
-/*width: 121px;*/
+  /*width: 121px;*/
   height: 38px;
   font-family: var(--main-font);
   font-weight: 500;
@@ -302,14 +357,14 @@ padding-left: 42px;
 }
 
 .list-menu {
-width: 322px;
-height: 36px;
-left: 239px;
-top: 576px;
-font-family: var(--main-font)
-font-weight: bold;
-font-size: 18px;
-line-height: 0.200;
-letter-spacing: 0.06em;
-color: var(--fth-color);
+  width: 322px;
+  height: 36px;
+  left: 239px;
+  top: 576px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0.2;
+  letter-spacing: 0.06em;
+  color: var(--fth-color);
 }
