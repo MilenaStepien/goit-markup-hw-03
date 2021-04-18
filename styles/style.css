@@ -7,6 +7,11 @@
   --nd-color: #757575;
   --rd-color: #ffffff;
   --fth-color: #212121;
+  /*--border-color-header: #ececec;
+    --border-color-cards: #eeeeee;
+    --box-shadow-color-first: rgba(0, 0, 0, 0.12);
+    --box-shadow-color-second: rgba(0, 0, 0, 0.14);
+    --box-shadow-color-third: rgba(0, 0, 0, 0.2);*/
 }
 
 body {
@@ -277,7 +282,17 @@ img:not(:last-child) {
   color: var(--nd-color);
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
+
+.border {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border-width: 270px;
+  background-color: var(--rd-color);
+}
+
 /* ====== END MAIN ====== */
 
 /* ====== FOOTER ====== */
@@ -340,8 +355,20 @@ img:not(:last-child) {
   background-color: var(--second-background-color);
   padding-left: 22px;
   padding-right: 22px;
-  margin-left: 8px;
   margin-bottom: 50px;
+  border: none;
+}
+
+.button-filtr:not(:last-child) {
+  margin-left: 8px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  margin-left: 215px;
 }
 
 .button-filtr:focus,
@@ -352,9 +379,9 @@ img:not(:last-child) {
   cursor: pointer;
 }
 
-.wszystkie {
-  margin-left: 287px;
-}
+/*.wszystkie {
+  margin-left: 510px;
+}*/
 
 .list-menu {
   width: 322px;
@@ -367,4 +394,12 @@ img:not(:last-child) {
   line-height: 0.2;
   letter-spacing: 0.06em;
   color: var(--fth-color);
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.category {
+  padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 20px;
 }
